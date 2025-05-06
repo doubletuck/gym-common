@@ -1,4 +1,4 @@
-name: Version and release library
+name: Release
 
 on:
   workflow_dispatch:
@@ -20,6 +20,7 @@ jobs:
     permissions:
       contents: write
       packages: write
+      pull-requests: read
 
     steps:
       - name: Checkout code
@@ -30,6 +31,16 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '21'
+          cache: maven
+
+      - name: Install GitHub CLI
+        run: |
+          sudo apt update
+          sudo apt install -y gh
+
+      - name: Authenticate GitHub CLI
+        run: |
+          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
 
       - name: Configure maven repository server
         run: |
@@ -98,9 +109,18 @@ jobs:
           echo "Previous tag: $PREV_TAG"
           
           if [ -n "$PREV_TAG" ]; then
-            git log $PREV_TAG..HEAD --pretty=format:"- %s (%an)" > CHANGELOG.md
+            gh pr list \
+              --state merged \
+              --search "merged:>${PREV_TAG}" \
+              --limit 100 \
+              --json title,number,author \
+              --jq '.[] | "- \(.title) (#\(.number) by \(.author.login))"' > CHANGELOG.md
           else
-            git log --pretty=format:"- %s (%an)" > CHANGELOG.md
+            gh pr list \
+              --state merged \
+              --limit 100 \
+              --json title,number,author \
+              --jq '.[] | "- \(.title) (#\(.number) by \(.author.login))"' > CHANGELOG.md
           fi
           
           echo "Generated changelog:"

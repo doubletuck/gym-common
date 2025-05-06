@@ -1,0 +1,33 @@
+package com.doubletuck.gym.common.model;
+
+public enum College {
+
+    ALABAMA,
+    ARIZONA,
+    ARIZONASTATE,
+    ARKANSAS,
+    AUBURN,
+    CLEMSON,
+    DENVER,
+    FLORIDA,
+    GEORGIA,
+    IOWA,
+    KENTUCKY,
+    LSU,
+    MICHIGAN,
+    MICHIGANSTATE,
+    MINNESOTA,
+    MISSOURI,
+    NCSTATE,
+    OHIOSTATE,
+    OKLAHOMA,
+    OREGONSTATE,
+    PENNSTATE,
+    STANFORD,
+    SOUTHERNUTAH,
+    UCBERKELEY,
+    UCLA,
+    UMDCOLLEGEPARK,
+    UNCCHAPELHILL,
+    UTAH
+}
