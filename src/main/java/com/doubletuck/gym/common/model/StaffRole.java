@@ -27,4 +27,29 @@ public enum StaffRole {
     StaffRole(String longName) {
         this.longName = longName;
     }
+
+    /**
+     * Finds the enum that whose name is equivalent to the given text
+     * value irrespective of casing. In addition, a blank space is
+     * interpreted as an underscore. There, "ASST COACH" is equivalent
+     * to "ASST_COACH".
+     *
+     * @param   text The string name of the enum constant.
+     * @return  The enum that has a name that matches the given text
+     *          input regardless of casing. Returns null if no matches
+     *          are found.
+     */
+    public static StaffRole find(String text) {
+
+        if (text != null && !text.isBlank()) {
+            text = text.trim().replace(" ", "_");
+            for (StaffRole role : StaffRole.values()) {
+                if (role.name().equalsIgnoreCase(text)) {
+                    return role;
+                }
+            }
+        }
+
+        return null;
+    }
 }
