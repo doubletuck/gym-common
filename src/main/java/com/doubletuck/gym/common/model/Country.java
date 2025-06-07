@@ -3,11 +3,18 @@ package com.doubletuck.gym.common.model;
 import lombok.Getter;
 import org.apache.commons.lang3.StringUtils;
 
+/**
+ * Country codes that are encountered across NCAA rosters. The list
+ * of countries is not exhaustive. IBAN's alpha-3 character code is
+ * used as the enum value.
+ * https://www.iban.com/country-codes
+ */
 @Getter
 public enum Country {
 
     AUS("Australia"),
     BEL("Belgium"),
+    BRA("Brazil"),
     CAN("Canada"),
     CHL("Chile"),
     DEU("Germany", "DE"),
@@ -15,13 +22,15 @@ public enum Country {
     ESP("Spain"),
     FIN("Finland"),
     FRA("France", "FR"),
-    ITA("Italy", "IT"),
-    HUN("Hungary", "HU"),
     GBR("Great Britain", "GB", "UK", "United Kingdom"),
+    HUN("Hungary", "HU"),
+    ITA("Italy", "IT"),
     LVA("Latvia"),
     MEX("Mexico"),
     NLD("Netherlands", "NL"),
     NZL("New Zealand", "NZ"),
+    NOR("Norway"),
+    PHL("Philippines"),
     ROM("Romania", "RO"),
     SGP("Singapore"),
     THA("Thailand"  ),
