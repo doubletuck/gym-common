@@ -40,6 +40,12 @@ public class CountryTest {
     }
 
     @Test
+    public void findBrazil() {
+        assertEquals(Country.BRA, Country.find("BRA"), "Name");
+        assertEquals(Country.BRA, Country.find("Brazil"), "Long Name");
+    }
+
+    @Test
     public void findCanada() {
         assertEquals(Country.CAN, Country.find("CAN"), "Name");
         assertEquals(Country.CAN, Country.find("Canada"), "Long Name");
@@ -71,10 +77,10 @@ public class CountryTest {
     }
 
     @Test
-    public void findHungary() {
-        assertEquals(Country.HUN, Country.find("HUN"), "Name");
-        assertEquals(Country.HUN, Country.find("Hungary"), "Long Name");
-        assertEquals(Country.HUN, Country.find("HU"), "Other name - 2 Character Code");
+    public void findFrance() {
+        assertEquals(Country.FRA, Country.find("FRA"), "Name");
+        assertEquals(Country.FRA, Country.find("France"), "Long Name");
+        assertEquals(Country.FRA, Country.find("FR"), "Other name - 2 Character Code");
     }
 
     @Test
@@ -84,6 +90,20 @@ public class CountryTest {
         assertEquals(Country.GBR, Country.find("GB"), "Other name - 2 Character Code");
         assertEquals(Country.GBR, Country.find("UK"), "Other name - UK");
         assertEquals(Country.GBR, Country.find("United Kingdom"), "Other name - United Kingdom");
+    }
+
+    @Test
+    public void findHungary() {
+        assertEquals(Country.HUN, Country.find("HUN"), "Name");
+        assertEquals(Country.HUN, Country.find("Hungary"), "Long Name");
+        assertEquals(Country.HUN, Country.find("HU"), "Other name - 2 Character Code");
+    }
+
+    @Test
+    public void findItaly() {
+        assertEquals(Country.ITA, Country.find("ITA"), "Name");
+        assertEquals(Country.ITA, Country.find("Italy"), "Long Name");
+        assertEquals(Country.ITA, Country.find("IT"), "Other name - 2 Character Code");
     }
 
     @Test
@@ -110,6 +130,18 @@ public class CountryTest {
         assertEquals(Country.NZL, Country.find("NZL"), "Name");
         assertEquals(Country.NZL, Country.find("New Zealand"), "Long Name");
         assertEquals(Country.NZL, Country.find("NZ"), "Other name - 2 Character Code");
+    }
+
+    @Test
+    public void findNorway() {
+        assertEquals(Country.NOR, Country.find("NOR"), "Name");
+        assertEquals(Country.NOR, Country.find("Norway"), "Long Name");
+    }
+
+    @Test
+    public void findPhilippines() {
+        assertEquals(Country.PHL, Country.find("PHL"), "Name");
+        assertEquals(Country.PHL, Country.find("Philippines"), "Long Name");
     }
 
     @Test
