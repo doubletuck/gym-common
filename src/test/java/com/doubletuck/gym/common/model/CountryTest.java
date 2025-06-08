@@ -123,6 +123,7 @@ public class CountryTest {
         assertEquals(Country.NLD, Country.find("NLD"), "Name");
         assertEquals(Country.NLD, Country.find("Netherlands"), "Long Name");
         assertEquals(Country.NLD, Country.find("NL"), "Other name - 2 Character Code");
+        assertEquals(Country.NLD, Country.find("Holland"), "Other name - Holland");
     }
 
     @Test
