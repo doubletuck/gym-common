@@ -27,7 +27,7 @@ public enum Country {
     ITA("Italy", "IT"),
     LVA("Latvia"),
     MEX("Mexico"),
-    NLD("Netherlands", "NL"),
+    NLD("Netherlands", "NL", "Holland"),
     NZL("New Zealand", "NZ"),
     NOR("Norway"),
     PHL("Philippines"),
