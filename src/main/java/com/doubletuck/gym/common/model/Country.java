@@ -22,7 +22,7 @@ public enum Country {
     ESP("Spain"),
     FIN("Finland"),
     FRA("France", "FR"),
-    GBR("Great Britain", "GB", "UK", "United Kingdom"),
+    GBR("United Kingdom of Great Britain and Northern Ireland", "GB", "Great Britain", "UK", "United Kingdom"),
     HUN("Hungary", "HU"),
     ITA("Italy", "IT"),
     LVA("Latvia"),
@@ -48,15 +48,16 @@ public enum Country {
     /**
      * Returns the Country enum that matches the given text.
      *
-     * @param   text A name that identifies a Country. The name is not
-     *          case sensitive and can be either the enum name, long name
-     *          or one of the other names associated with the enum value.
+     * @param   text A name that identifies a Country. The name is not case
+     *          sensitive and can be either the enum name, long name or one
+     *          of the other names associated with the enum value. All "."
+     *          are ignored. For example, "G.B." is interpreted as "GB".
      * @return  The Country enum that matches the given text. Null is
      *          returned if no matches are found.
      */
     public static Country find(String text) {
         if (text != null && !text.isEmpty()) {
-            text = text.trim();
+            text = text.trim().replace(".","");
             for (Country country : values()) {
                 if (country.name().equalsIgnoreCase(text) ||
                         country.longName.equalsIgnoreCase(text) ||
