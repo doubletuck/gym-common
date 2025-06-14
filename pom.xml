@@ -7,7 +7,7 @@
 
     <groupId>com.doubletuck</groupId>
     <artifactId>gym-common</artifactId>
-    <version>0.2.0</version>
+    <version>0.3.0</version>
     <packaging>jar</packaging>
     <name>Gym Roster Common Library</name>
     <description>Common models and utilities used to support Gym Roster actions</description>
