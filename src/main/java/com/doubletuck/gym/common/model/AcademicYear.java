@@ -17,7 +17,7 @@ public enum AcademicYear {
     FIFTH_YR("Fifth Year", "5th-Year Senior", "5th", "Fifth"),
     SIXTH_YR("Sixth Year", "6th"),
     GR("Graduate Student", "Graduate", "Gr."),
-    REDSHIRT("Redshirt", "Rs.");
+    REDSHIRT("Redshirt", "Rs.", "Medical Redshirt");
 
     private final String longName;
     private final String[] otherNames;

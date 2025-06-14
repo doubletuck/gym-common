@@ -131,7 +131,8 @@ public class AcademicYearTest {
     public void findRedshirt() {
         assertEquals(AcademicYear.REDSHIRT, AcademicYear.find("REDSHIRT"), "By Name");
         assertEquals(AcademicYear.REDSHIRT, AcademicYear.find("Redshirt"), "By Long Name");
-        assertEquals(AcademicYear.REDSHIRT, AcademicYear.find("Rs."), "By Other Name");
+        assertEquals(AcademicYear.REDSHIRT, AcademicYear.find("Rs."), "By Other Name - Rs.");
+        assertEquals(AcademicYear.REDSHIRT, AcademicYear.find("Medical Redshirt"), "By Other Name - Medical Redshirt");
     }
 
     @Test
