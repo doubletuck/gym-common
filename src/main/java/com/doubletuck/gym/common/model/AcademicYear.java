@@ -7,13 +7,13 @@ import org.apache.commons.lang3.StringUtils;
 public enum AcademicYear {
 
     FR("Freshman", "Fr."),
-    REDSHIRT_FR("Redshirt Freshman", "R-Fr.", "RS Fr.", "R-Freshman"),
+    REDSHIRT_FR("Redshirt Freshman", "R-Fr.", "RS Fr.", "R-Freshman", "RS-Freshman"),
     SO("Sophomore", "So."),
-    REDSHIRT_SO("Redshirt Sophomore", "R-So.", "RS So.", "R-Sophomore"),
+    REDSHIRT_SO("Redshirt Sophomore", "R-So.", "RS So.", "R-Sophomore", "RS-Sophomore"),
     JR("Junior", "Jr."),
-    REDSHIRT_JR("Redshirt Junior", "R-Jr.", "RS Jr.", "R-Junior"),
+    REDSHIRT_JR("Redshirt Junior", "R-Jr.", "RS Jr.", "R-Junior", "RS-Junior"),
     SR("Senior", "Sr."),
-    REDSHIRT_SR("Redshirt Senior", "R-Sr.", "RS Sr.", "R-Senior"),
+    REDSHIRT_SR("Redshirt Senior", "R-Sr.", "RS Sr.", "R-Senior", "RS-Senior"),
     FIFTH_YR("Fifth Year", "5th-Year Senior", "5th", "Fifth"),
     SIXTH_YR("Sixth Year", "6th"),
     GR("Graduate Student", "Graduate", "Gr."),

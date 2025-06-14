@@ -49,6 +49,7 @@ public class AcademicYearTest {
         assertEquals(AcademicYear.REDSHIRT_FR, AcademicYear.find("R-Fr."), "By Other Name - R-Fr.");
         assertEquals(AcademicYear.REDSHIRT_FR, AcademicYear.find("RS Fr."), "By Other Name - RS Fr.");
         assertEquals(AcademicYear.REDSHIRT_FR, AcademicYear.find("R-Freshman"), "By Other Name - R-Freshman");
+        assertEquals(AcademicYear.REDSHIRT_FR, AcademicYear.find("RS-Freshman"), "By Other Name - RS-Freshman");
     }
 
     @Test
@@ -65,6 +66,7 @@ public class AcademicYearTest {
         assertEquals(AcademicYear.REDSHIRT_SO, AcademicYear.find("R-So."), "By Other Name - R-So.");
         assertEquals(AcademicYear.REDSHIRT_SO, AcademicYear.find("RS So."), "By Other Name - RS So.");
         assertEquals(AcademicYear.REDSHIRT_SO, AcademicYear.find("R-Sophomore"), "By Other Name - R-Sophomore");
+        assertEquals(AcademicYear.REDSHIRT_SO, AcademicYear.find("RS-Sophomore"), "By Other Name - RS-Sophomore");
     }
 
     @Test
@@ -81,6 +83,7 @@ public class AcademicYearTest {
         assertEquals(AcademicYear.REDSHIRT_JR, AcademicYear.find("R-Jr."), "By Other Name - R-Jr.");
         assertEquals(AcademicYear.REDSHIRT_JR, AcademicYear.find("RS Jr."), "By Other Name - RS Jr.");
         assertEquals(AcademicYear.REDSHIRT_JR, AcademicYear.find("R-Junior"), "By Other Name - R-Junior");
+        assertEquals(AcademicYear.REDSHIRT_JR, AcademicYear.find("RS-Junior"), "By Other Name - RS-Junior");
     }
 
     @Test
@@ -97,6 +100,7 @@ public class AcademicYearTest {
         assertEquals(AcademicYear.REDSHIRT_SR, AcademicYear.find("R-Sr."), "By Other Name - R-Sr.");
         assertEquals(AcademicYear.REDSHIRT_SR, AcademicYear.find("RS Sr."), "By Other Name - RS Sr.");
         assertEquals(AcademicYear.REDSHIRT_SR, AcademicYear.find("R-Senior"), "By Other Name - R-Senior");
+        assertEquals(AcademicYear.REDSHIRT_SR, AcademicYear.find("RS-Senior"), "By Other Name - RS-Senior");
     }
 
     @Test
