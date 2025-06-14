@@ -27,6 +27,12 @@ public class CountryTest {
     }
 
     @Test
+    public void findWhenNameOrOtherNameHasPeriods() {
+        assertEquals(Country.USA, Country.find("U.n.i.t.e.d S.t.a.t.e.s of America"), "Name - Periods");
+        assertEquals(Country.USA, Country.find("U.S."), "Other Name - U.S.");
+    }
+
+    @Test
     public void findOtherNameDespiteCase() {
         assertEquals(Country.GBR, Country.find("united kingdom"), "Lower case");
         assertEquals(Country.GBR, Country.find("UNITED KINGDOM"), "Upper case");
@@ -84,11 +90,14 @@ public class CountryTest {
     }
 
     @Test
-    public void findGreatBritain() {
+    public void findGBRUnitedKingdom() {
         assertEquals(Country.GBR, Country.find("GBR"), "Name");
-        assertEquals(Country.GBR, Country.find("Great Britain"), "Long Name");
-        assertEquals(Country.GBR, Country.find("GB"), "Other name - 2 Character Code");
+        assertEquals(Country.GBR, Country.find("United Kingdom of Great Britain and Northern Ireland"), "Long Name");
+        assertEquals(Country.GBR, Country.find("GB"), "Other name - GB - 2 Character Code");
+        assertEquals(Country.GBR, Country.find("G.B."), "Other name - G.B. - 2 Character Code (with periods)");
+        assertEquals(Country.GBR, Country.find("Great Britain"), "Other name - Great Britain");
         assertEquals(Country.GBR, Country.find("UK"), "Other name - UK");
+        assertEquals(Country.GBR, Country.find("U.K."), "Other name - U.K. (with periods)");
         assertEquals(Country.GBR, Country.find("United Kingdom"), "Other name - United Kingdom");
     }
 
@@ -175,6 +184,7 @@ public class CountryTest {
         assertEquals(Country.USA, Country.find("USA"), "Name");
         assertEquals(Country.USA, Country.find("United States of America"), "Long Name");
         assertEquals(Country.USA, Country.find("US"), "Other name - 2 Character Code");
+        assertEquals(Country.USA, Country.find("U.S."), "Other name - (U.S.) 2 Character Code w/ periods");
     }
 
     @Test
