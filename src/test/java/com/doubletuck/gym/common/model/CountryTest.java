@@ -149,6 +149,12 @@ public class CountryTest {
     }
 
     @Test
+    public void findPanama() {
+        assertEquals(Country.PAN, Country.find("PAN"), "Name");
+        assertEquals(Country.PAN, Country.find("Panama"), "Long Name");
+    }
+
+    @Test
     public void findPhilippines() {
         assertEquals(Country.PHL, Country.find("PHL"), "Name");
         assertEquals(Country.PHL, Country.find("Philippines"), "Long Name");
