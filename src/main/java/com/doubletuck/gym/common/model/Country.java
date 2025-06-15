@@ -31,6 +31,7 @@ public enum Country {
     NZL("New Zealand", "NZ"),
     NOR("Norway"),
     PAN("Panama"),
+    PER("Peru"),
     PHL("Philippines"),
     ROM("Romania", "RO"),
     SGP("Singapore"),
