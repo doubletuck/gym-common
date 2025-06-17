@@ -64,6 +64,12 @@ public class CountryTest {
     }
 
     @Test
+    public void findColombia() {
+        assertEquals(Country.COL, Country.find("COL"), "Name");
+        assertEquals(Country.COL, Country.find("Colombia"), "Long Name");
+    }
+
+    @Test
     public void findGermany() {
         assertEquals(Country.DEU, Country.find("DEU"), "Name");
         assertEquals(Country.DEU, Country.find("Germany"), "Long Name");
@@ -99,6 +105,12 @@ public class CountryTest {
         assertEquals(Country.GBR, Country.find("UK"), "Other name - UK");
         assertEquals(Country.GBR, Country.find("U.K."), "Other name - U.K. (with periods)");
         assertEquals(Country.GBR, Country.find("United Kingdom"), "Other name - United Kingdom");
+    }
+
+    @Test
+    public void findGuatemala() {
+        assertEquals(Country.GTM, Country.find("GTM"), "Name");
+        assertEquals(Country.GTM, Country.find("Guatemala"), "Long Name");
     }
 
     @Test
