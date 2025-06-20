@@ -27,6 +27,7 @@ public enum Country {
     GTM("Guatemala"),
     HUN("Hungary", "HU"),
     ITA("Italy", "IT"),
+    JAM("Jamaica"),
     LVA("Latvia"),
     MEX("Mexico"),
     NLD("Netherlands", "NL", "Holland"),
