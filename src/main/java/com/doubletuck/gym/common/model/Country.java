@@ -38,6 +38,7 @@ public enum Country {
     PHL("Philippines"),
     ROM("Romania", "RO"),
     SGP("Singapore"),
+    SLV("El Salvador"),
     THA("Thailand"  ),
     USA("United States of America", "US"),
     VEN("Venezuela");
