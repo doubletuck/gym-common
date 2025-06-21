@@ -46,6 +46,12 @@ public class CountryTest {
     }
 
     @Test
+    public void findAustria() {
+        assertEquals(Country.AUT, Country.find("AUT"), "Name");
+        assertEquals(Country.AUT, Country.find("Austria"), "Long Name");
+    }
+
+    @Test
     public void findBrazil() {
         assertEquals(Country.BRA, Country.find("BRA"), "Name");
         assertEquals(Country.BRA, Country.find("Brazil"), "Long Name");
@@ -61,6 +67,12 @@ public class CountryTest {
     public void findChile() {
         assertEquals(Country.CHL, Country.find("CHL"), "Name");
         assertEquals(Country.CHL, Country.find("Chile"), "Long Name");
+    }
+
+    @Test
+    public void findColombia() {
+        assertEquals(Country.COL, Country.find("COL"), "Name");
+        assertEquals(Country.COL, Country.find("Colombia"), "Long Name");
     }
 
     @Test
@@ -99,6 +111,18 @@ public class CountryTest {
         assertEquals(Country.GBR, Country.find("UK"), "Other name - UK");
         assertEquals(Country.GBR, Country.find("U.K."), "Other name - U.K. (with periods)");
         assertEquals(Country.GBR, Country.find("United Kingdom"), "Other name - United Kingdom");
+    }
+
+    @Test
+    public void findGuatemala() {
+        assertEquals(Country.GTM, Country.find("GTM"), "Name");
+        assertEquals(Country.GTM, Country.find("Guatemala"), "Long Name");
+    }
+
+    @Test
+    public void findJamaica() {
+        assertEquals(Country.JAM, Country.find("JAM"), "Name");
+        assertEquals(Country.JAM, Country.find("Jamaica"), "Long Name");
     }
 
     @Test
@@ -177,6 +201,12 @@ public class CountryTest {
     public void findSingapore() {
         assertEquals(Country.SGP, Country.find("SGP"), "Name");
         assertEquals(Country.SGP, Country.find("Singapore"), "Long Name");
+    }
+
+    @Test
+    public void findElSalvador() {
+        assertEquals(Country.SLV, Country.find("SLV"), "Name");
+        assertEquals(Country.SLV, Country.find("El Salvador"), "Long Name");
     }
 
     @Test

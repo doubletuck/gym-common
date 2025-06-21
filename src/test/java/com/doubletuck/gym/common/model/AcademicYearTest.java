@@ -39,7 +39,8 @@ public class AcademicYearTest {
     public void findFreshman() {
         assertEquals(AcademicYear.FR, AcademicYear.find("FR"), "By Name");
         assertEquals(AcademicYear.FR, AcademicYear.find("Freshman"), "By Long Name");
-        assertEquals(AcademicYear.FR, AcademicYear.find("Fr."), "By Other Name");
+        assertEquals(AcademicYear.FR, AcademicYear.find("Fr."), "By Other Name - Fr.");
+        assertEquals(AcademicYear.FR, AcademicYear.find("Fy."), "By Other Name - Fy.");
     }
 
     @Test

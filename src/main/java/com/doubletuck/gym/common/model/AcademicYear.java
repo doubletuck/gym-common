@@ -6,7 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 @Getter
 public enum AcademicYear {
 
-    FR("Freshman", "Fr."),
+    FR("Freshman", "Fr.", "Fy."),
     REDSHIRT_FR("Redshirt Freshman", "R-Fr.", "RS Fr.", "R-Freshman", "RS-Freshman"),
     SO("Sophomore", "So."),
     REDSHIRT_SO("Redshirt Sophomore", "R-So.", "RS So.", "R-Sophomore", "RS-Sophomore"),
