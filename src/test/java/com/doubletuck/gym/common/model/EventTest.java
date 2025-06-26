@@ -68,6 +68,7 @@ public class EventTest {
     public void findFloorExercise() {
         assertEquals(Event.FX, Event.find("FX"), "Name");
         assertEquals(Event.FX, Event.find("Floor Exercise"), "Long name");
-        assertEquals(Event.FX, Event.find("Floor"), "Other names");
+        assertEquals(Event.FX, Event.find("Floor"), "Other names - Floor");
+        assertEquals(Event.FX, Event.find("F"), "Other names - F");
     }
 }

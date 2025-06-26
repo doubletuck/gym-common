@@ -10,7 +10,7 @@ public enum Event {
     VT("Vault", "V"),
     UB("Uneven Bars", "Bars"),
     BB("Balance Beam", "Beam"),
-    FX("Floor Exercise", "Floor");
+    FX("Floor Exercise", "Floor", "F");
 
     private final String longName;
     private final String[] otherNames;

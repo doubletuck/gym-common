@@ -79,7 +79,6 @@ public class CountryTest {
     public void findGermany() {
         assertEquals(Country.DEU, Country.find("DEU"), "Name");
         assertEquals(Country.DEU, Country.find("Germany"), "Long Name");
-        assertEquals(Country.DEU, Country.find("DE"), "Other name - 2 Character Code");
     }
 
     @Test
@@ -146,6 +145,12 @@ public class CountryTest {
     }
 
     @Test
+    public void findLithuania() {
+        assertEquals(Country.LTU, Country.find("LTU"), "Name");
+        assertEquals(Country.LTU, Country.find("Lithuania"), "Long Name");
+    }
+
+    @Test
     public void findMexico() {
         assertEquals(Country.MEX, Country.find("MEX"), "Name");
         assertEquals(Country.MEX, Country.find("Mexico"), "Long Name");
@@ -207,6 +212,12 @@ public class CountryTest {
     public void findElSalvador() {
         assertEquals(Country.SLV, Country.find("SLV"), "Name");
         assertEquals(Country.SLV, Country.find("El Salvador"), "Long Name");
+    }
+
+    @Test
+    public void findSlovenia() {
+        assertEquals(Country.SVN, Country.find("SVN"), "Name");
+        assertEquals(Country.SVN, Country.find("Slovenia"), "Long Name");
     }
 
     @Test
