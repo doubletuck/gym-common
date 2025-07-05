@@ -55,7 +55,6 @@ public class EventTest {
         assertEquals(Event.UB, Event.find("UB"), "Name");
         assertEquals(Event.UB, Event.find("Uneven Bars"), "Long name");
         assertEquals(Event.UB, Event.find("Bars"), "Other names - Bars");
-        assertEquals(Event.UB, Event.find("B"), "Other names - B");
     }
 
     @Test
