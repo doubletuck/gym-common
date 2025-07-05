@@ -8,7 +8,7 @@ public enum Event {
 
     AA("All-Around", "All Around"),
     VT("Vault", "V"),
-    UB("Uneven Bars", "Bars"),
+    UB("Uneven Bars", "Bars", "B"),
     BB("Balance Beam", "Beam"),
     FX("Floor Exercise", "Floor", "F");
 
