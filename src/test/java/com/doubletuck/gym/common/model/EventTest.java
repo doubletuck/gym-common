@@ -40,7 +40,8 @@ public class EventTest {
     public void findAllAround() {
         assertEquals(Event.AA, Event.find("AA"), "Name");
         assertEquals(Event.AA, Event.find("All-Around"), "Long name");
-        assertEquals(Event.AA, Event.find("All Around"), "Other names");
+        assertEquals(Event.AA, Event.find("All Around"), "Other names - All Around");
+        assertEquals(Event.AA, Event.find("A-A"), "Other names - A-A");
     }
 
     @Test
@@ -54,7 +55,7 @@ public class EventTest {
     public void findUnevenBars() {
         assertEquals(Event.UB, Event.find("UB"), "Name");
         assertEquals(Event.UB, Event.find("Uneven Bars"), "Long name");
-        assertEquals(Event.UB, Event.find("Bars"), "Other names");
+        assertEquals(Event.UB, Event.find("Bars"), "Other names - Bars");
     }
 
     @Test
