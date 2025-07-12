@@ -40,7 +40,8 @@ public class EventTest {
     public void findAllAround() {
         assertEquals(Event.AA, Event.find("AA"), "Name");
         assertEquals(Event.AA, Event.find("All-Around"), "Long name");
-        assertEquals(Event.AA, Event.find("All Around"), "Other names");
+        assertEquals(Event.AA, Event.find("All Around"), "Other names - All Around");
+        assertEquals(Event.AA, Event.find("A-A"), "Other names - A-A");
     }
 
     @Test

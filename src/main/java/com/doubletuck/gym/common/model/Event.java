@@ -6,7 +6,7 @@ import org.apache.commons.lang3.StringUtils;
 @Getter
 public enum Event {
 
-    AA("All-Around", "All Around"),
+    AA("All-Around", "All Around", "A-A"),
     VT("Vault", "V"),
     UB("Uneven Bars", "Bars"),
     BB("Balance Beam", "Beam"),
