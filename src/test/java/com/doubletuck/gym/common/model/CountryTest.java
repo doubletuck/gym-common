@@ -88,6 +88,12 @@ public class CountryTest {
     }
 
     @Test
+    public void findCostaRica() {
+        assertEquals(Country.CRI, Country.find("CRI"), "Name");
+        assertEquals(Country.CRI, Country.find("Costa Rica"), "Long Name");
+    }
+
+    @Test
     public void findDenmark() {
         assertEquals(Country.DNK, Country.find("DNK"), "Name");
         assertEquals(Country.DNK, Country.find("Denmark"), "Long Name");

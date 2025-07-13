@@ -21,6 +21,7 @@ public enum Country {
     CHE("Switzerland"),
     CHL("Chile"),
     COL("Colombia"),
+    CRI("Costa Rica"),
     DEU("Germany"),
     DNK("Denmark"),
     EGY("Egypt"),
