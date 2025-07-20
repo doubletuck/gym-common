@@ -16,6 +16,7 @@ public enum Country {
     AUS("Australia"),
     AUT("Austria"),
     BEL("Belgium"),
+    BMU("Bermuda"),
     BRA("Brazil"),
     CAN("Canada"),
     CHE("Switzerland"),
