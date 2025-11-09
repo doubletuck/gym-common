@@ -126,6 +126,7 @@ public class AcademicYearTest {
         assertEquals(AcademicYear.GR, AcademicYear.find("Graduate Student"), "By Long Name");
         assertEquals(AcademicYear.GR, AcademicYear.find("Graduate"), "By Other Name - Graduate");
         assertEquals(AcademicYear.GR, AcademicYear.find("Gr."), "By Other Name - Gr.");
+        assertEquals(AcademicYear.GR, AcademicYear.find("Grad."), "By Other Name - Grad.");
     }
 
     @Test
