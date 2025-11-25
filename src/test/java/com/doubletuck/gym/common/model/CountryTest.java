@@ -168,6 +168,12 @@ public class CountryTest {
     }
 
     @Test
+    public void findIreland() {
+        assertEquals(Country.IRL, Country.find("IRL"), "Name");
+        assertEquals(Country.IRL, Country.find("Ireland"), "Long Name");
+    }
+
+    @Test
     public void findIsrael() {
         assertEquals(Country.ISR, Country.find("ISR"), "Name");
         assertEquals(Country.ISR, Country.find("Israel"), "Long Name");
@@ -240,9 +246,9 @@ public class CountryTest {
 
     @Test
     public void findRomania() {
-        assertEquals(Country.ROM, Country.find("ROM"), "Name");
-        assertEquals(Country.ROM, Country.find("Romania"), "Long Name");
-        assertEquals(Country.ROM, Country.find("RO"), "Other name - 2 Character Code");
+        assertEquals(Country.ROU, Country.find("ROU"), "Name");
+        assertEquals(Country.ROU, Country.find("Romania"), "Long Name");
+        assertEquals(Country.ROU, Country.find("RO"), "Other name - 2 Character Code");
     }
 
     @Test
@@ -279,6 +285,12 @@ public class CountryTest {
     public void findThailand() {
         assertEquals(Country.THA, Country.find("THA"), "Name");
         assertEquals(Country.THA, Country.find("Thailand"), "Long Name");
+    }
+
+    @Test
+    public void findTurkey() {
+        assertEquals(Country.TUR, Country.find("TUR"), "Name");
+        assertEquals(Country.TUR, Country.find("Turkey"), "Long Name");
     }
 
     @Test

@@ -33,6 +33,7 @@ public enum Country {
     GBR("United Kingdom of Great Britain and Northern Ireland", "GB", "Great Britain", "UK", "United Kingdom"),
     GTM("Guatemala"),
     HUN("Hungary", "HU"),
+    IRL("Ireland"),
     ISR("Israel"),
     ITA("Italy", "IT"),
     JAM("Jamaica"),
@@ -45,12 +46,13 @@ public enum Country {
     PAN("Panama"),
     PER("Peru"),
     PHL("Philippines"),
-    ROM("Romania", "RO"),
+    ROU("Romania", "RO"),
     SGP("Singapore"),
     SLV("El Salvador"),
     SVN("Slovenia"),
     SWE("Sweden"),
     THA("Thailand"  ),
+    TUR("Turkey"),
     USA("United States of America", "US"),
     VEN("Venezuela");
 
