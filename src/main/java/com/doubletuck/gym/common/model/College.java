@@ -1,7 +1,5 @@
 package com.doubletuck.gym.common.model;
 
-import org.apache.commons.lang3.StringUtils;
-
 public enum College {
 
     AIRFORCE,

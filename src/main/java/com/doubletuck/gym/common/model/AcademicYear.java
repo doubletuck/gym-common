@@ -15,6 +15,7 @@ public enum AcademicYear {
     SR("Senior", "Sr."),
     REDSHIRT_SR("Redshirt Senior", "R-Sr.", "RS Sr.", "R-Senior", "RS-Senior"),
     FIFTH_YR("Fifth Year", "5th-Year Senior", "5th", "Fifth"),
+    REDSHIRT_FIFTH_YR("Redshirt Fifth Year"),
     SIXTH_YR("Sixth Year", "6th"),
     GR("Graduate Student", "Graduate", "Gr.", "Grad."),
     REDSHIRT("Redshirt", "Rs.", "Medical Redshirt");
