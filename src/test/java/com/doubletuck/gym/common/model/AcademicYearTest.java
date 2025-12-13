@@ -114,6 +114,12 @@ public class AcademicYearTest {
     }
 
     @Test
+    public void findRedshirtFifthYear() {
+        assertEquals(AcademicYear.REDSHIRT_FIFTH_YR, AcademicYear.find("REDSHIRT_FIFTH_YR"), "By Name");
+        assertEquals(AcademicYear.REDSHIRT_FIFTH_YR, AcademicYear.find("Redshirt Fifth Year"), "By Long Name");
+    }
+
+    @Test
     public void findSixthYear() {
         assertEquals(AcademicYear.SIXTH_YR, AcademicYear.find("SIXTH_YR"), "By Name");
         assertEquals(AcademicYear.SIXTH_YR, AcademicYear.find("Sixth Year"), "By Long Name");

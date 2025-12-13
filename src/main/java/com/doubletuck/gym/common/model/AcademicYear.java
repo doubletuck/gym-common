@@ -1,7 +1,7 @@
 package com.doubletuck.gym.common.model;
 
 import lombok.Getter;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.Strings;
 
 @Getter
 public enum AcademicYear {
@@ -15,6 +15,7 @@ public enum AcademicYear {
     SR("Senior", "Sr."),
     REDSHIRT_SR("Redshirt Senior", "R-Sr.", "RS Sr.", "R-Senior", "RS-Senior"),
     FIFTH_YR("Fifth Year", "5th-Year Senior", "5th", "Fifth"),
+    REDSHIRT_FIFTH_YR("Redshirt Fifth Year"),
     SIXTH_YR("Sixth Year", "6th"),
     GR("Graduate Student", "Graduate", "Gr.", "Grad."),
     REDSHIRT("Redshirt", "Rs.", "Medical Redshirt");
@@ -40,7 +41,7 @@ public enum AcademicYear {
             for (AcademicYear AcademicYear : values()) {
                 if (AcademicYear.name().equalsIgnoreCase(text) ||
                         AcademicYear.longName.equalsIgnoreCase(text) ||
-                        StringUtils.equalsAnyIgnoreCase(text, AcademicYear.otherNames)) {
+                        Strings.CI.equalsAny(text, AcademicYear.otherNames)) {
                     return AcademicYear;
                 }
             }

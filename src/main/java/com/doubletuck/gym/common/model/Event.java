@@ -1,7 +1,7 @@
 package com.doubletuck.gym.common.model;
 
 import lombok.Getter;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.Strings;
 
 @Getter
 public enum Event {
@@ -34,7 +34,7 @@ public enum Event {
             for (Event Event : values()) {
                 if (Event.name().equalsIgnoreCase(text) ||
                         Event.longName.equalsIgnoreCase(text) ||
-                        StringUtils.equalsAnyIgnoreCase(text, Event.otherNames)) {
+                        Strings.CI.equalsAny(text, Event.otherNames)) {
                     return Event;
                 }
             }
