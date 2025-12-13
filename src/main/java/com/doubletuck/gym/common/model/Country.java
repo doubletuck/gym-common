@@ -1,7 +1,7 @@
 package com.doubletuck.gym.common.model;
 
 import lombok.Getter;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.Strings;
 
 /**
  * Country codes that are encountered across NCAA rosters. The list
@@ -80,7 +80,7 @@ public enum Country {
             for (Country country : values()) {
                 if (country.name().equalsIgnoreCase(text) ||
                         country.longName.equalsIgnoreCase(text) ||
-                        StringUtils.equalsAnyIgnoreCase(text, country.otherNames)) {
+                        Strings.CI.equalsAny(text, country.otherNames)) {
                     return country;
                 }
             }

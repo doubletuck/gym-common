@@ -1,7 +1,7 @@
 package com.doubletuck.gym.common.model;
 
 import lombok.Getter;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.Strings;
 
 @Getter
 public enum State {
@@ -82,7 +82,7 @@ public enum State {
             for (State state : State.values()) {
                 if (state.name().equalsIgnoreCase(text) ||
                         state.longName.equalsIgnoreCase(text) ||
-                        StringUtils.equalsAnyIgnoreCase(text, state.otherNames)) {
+                        Strings.CI.equalsAny(text, state.otherNames)) {
                     return state;
                 }
             }

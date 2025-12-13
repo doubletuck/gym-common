@@ -1,7 +1,7 @@
 package com.doubletuck.gym.common.model;
 
 import lombok.Getter;
-import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.Strings;
 
 @Getter
 public enum AcademicYear {
@@ -41,7 +41,7 @@ public enum AcademicYear {
             for (AcademicYear AcademicYear : values()) {
                 if (AcademicYear.name().equalsIgnoreCase(text) ||
                         AcademicYear.longName.equalsIgnoreCase(text) ||
-                        StringUtils.equalsAnyIgnoreCase(text, AcademicYear.otherNames)) {
+                        Strings.CI.equalsAny(text, AcademicYear.otherNames)) {
                     return AcademicYear;
                 }
             }
